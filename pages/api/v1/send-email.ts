@@ -20,7 +20,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const result = await emailService.sendEmail(to, subject, body, id);
     res.status(200).json(result);
-  } catch (err: any) {
-    return res.status(500).json({ status: "error", message: err.message });
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : 'Unexpected error';
+    return res.status(500).json({ status: 'error', message });
   }
 }
