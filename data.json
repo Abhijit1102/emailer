@@ -1,0 +1,6 @@
+{
+  "to": "abhijitrajkumar2@gmail.com",
+  "subject": "SMTP fallback test",
+  "body": "This email is sent via Mailtrap Live SMTP provider.",
+  "id": "smtp-test-003"
+}
