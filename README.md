@@ -14,8 +14,8 @@ A production-ready email dispatch system built with **Next.js**, featuring:
 
 🔧 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/emailer-service.git
-cd emailer-service
+git https://github.com/Abhijit1102/emailer.git
+cd emailer
 
 ```
 📁 2. Install Dependencies
