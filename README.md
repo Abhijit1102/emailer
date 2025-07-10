@@ -104,7 +104,7 @@ MAILTRAP_SMTP_PASS=your-mailtrap-api-token
 ```bash
 curl -X POST http://localhost:3000/api/v1/send-email `
   -H "Content-Type: application/json" `
-  -d (Get-Content -Raw -Path "./data.json")
+   --data-binary "@data.json"
 
 ```
 
